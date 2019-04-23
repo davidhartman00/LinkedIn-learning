@@ -9,7 +9,7 @@ app.use(express.static(__dirname))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-var dbUrl = 'mongodb://user:user@ds155424.mlab.com:55424/learning-node'
+var dbUrl = 'mongodb:///learning-node'
 
 var messages = [
     { name: 'Tim', message: 'Hi' },
